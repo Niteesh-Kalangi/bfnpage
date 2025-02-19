@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Historic Black-Owned Farms in Georgia</title>
+  <style>
+    /* Basic Page & Header Styles */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+    .header {
+      background-color: #165016;
+      padding: 20px;
+      text-align: center;
+    }
+    .header h1 {
+      color: #fff;
+      font-size: 32px;
+      margin: 0;
+    }
+
+    /* Main Container (Intro Text + Map) */
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 20px;
+      background: #fff;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      border-radius: 8px;
+    }
+    .container h2 {
+      color: #165016;
+      font-size: 28px;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .container p {
+      font-size: 16px;
+      line-height: 1.6;
+      text-align: justify;
+    }
+    .map-container {
+      text-align: center;
+      margin-top: 20px;
+    }
+    .map-container iframe {
+      width: 100%;
+      height: 480px;
+      border: none;
+      border-radius: 8px;
+    }
+
+    .timeline-section {
+      text-align: center;
+      padding: 20px;
+    }
+    .timeline-section h2 {
+      margin-bottom: 80px;
+      color: #165016;
+      font-size: 28px;
+    }
+    .timeline-container {
+      position: relative;
+      width: 90%;
+      margin: 100px auto 120px auto;
+      padding-top: 40px;
+    }
+    .timeline {
+      position: relative;
+      width: 100%;
+      height: 4px;
+      background: #165016; /* Darker green for timeline line */
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .tick {
+      position: absolute;
+      width: 1px;
+      height: 15px;
+      background: black;
+      top: -5px;
+    }
+    .event {
+      position: absolute;
+      text-align: center;
+      transform: translateX(-50%);
+    }
+    .dot {
+      width: 14px;
+      height: 14px;
+      background: #165016; /* Darker green for dot */
+      border-radius: 50%;
+      position: absolute;
+      top: -6px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    .event-box {
+      position: absolute;
+      background: white;
+      padding: 15px;
+      border: 2px solid #165016; /* Darker green border */
+      border-radius: 8px;
+      width: 140px;
+      left: 50%;
+      transform: translateX(-50%);
+      box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.15);
+    }
+    .event:nth-child(even) .event-box {
+      top: 50px;
+    }
+    .event:nth-child(odd) .event-box {
+      top: -80px;
+    }
+
+    /* Footer */
+    .footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #165016;
+      color: #fff;
+      margin-top: 40px;
+    }
+
+    /* Responsive Adjustments */
+    @media (max-width: 768px) {
+      .container {
+        width: 90%;
+      }
+      .map-container iframe {
+        height: 350px;
+      }
+      .event-box {
+        width: 120px;
+        font-size: 12px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <div class="header">
+    <h1>Georgia's award-winning Black-Owned Farms</h1>
+  </div>
+
+  <!-- Main Content with Map -->
+  <div class="container">
+    <h2>Honoring the Legacy of Black Farmers</h2>
+    <p>
+      Farming has been a vital part of Georgia's economy, culture, and overall identity for centuries.
+      The Centennial Farms program, developed by the Georgia Department of Community Affairs in 1993, aims to
+      distinguish family farms that have been in operation in Georgia for 100 years or more in order to honor their
+      contributions to the preservation of Georgia’s rich agricultural history.
+    </p>
+    <p>
+      Despite the significant contributions of these Centennial award-winning farms, the stories of Black farmers who
+      have received this prestigious award have been historically underrepresented. Black farmers have played an
+      incredibly important role in shaping Georgia's agricultural landscape, despite facing challenges including
+      discrimination, land loss, and economic hardships.
+    </p>
+    <p>
+      The goal of the Black Farmers’ Network is to amplify the stories of these historic, award-winning Black-owned
+      farms and spread the stories of their rich histories and significant contributions.
+    </p>
+
+    <!-- Interactive Map -->
+    <div class="map-container">
+      <h2>Interactive Map of Award-Winning Black Farms</h2>
+      <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1h_Ai1460eoYhUjCi1B1JLXn_eO5mFhI&ehbc=2E312F&noprof=1"></iframe>
+    </div>
+  </div>
+
+  <!-- Timeline Section -->
+  <div class="timeline-section">
+    <!-- Cooper Family Farm Timeline -->
+    <h2>Cooper Family Farm Timeline</h2>
+    <div class="timeline-container">
+      <div class="timeline">
+        <div class="tick" style="left: 10%;"></div>
+        <div class="tick" style="left: 30%;"></div>
+        <div class="tick" style="left: 50%;"></div>
+        <div class="tick" style="left: 70%;"></div>
+        <div class="tick" style="left: 90%;"></div>
+
+        <div class="event" style="left: 15%;">
+          <div class="dot"></div>
+          <div class="event-box">1875 - Church Founded</div>
+        </div>
+        <div class="event" style="left: 25%;">
+          <div class="dot"></div>
+          <div class="event-box">1885 - Farm Established</div>
+        </div>
+        <div class="event" style="left: 40%;">
+          <div class="dot"></div>
+          <div class="event-box">1890s - Church Rebuilt</div>
+        </div>
+        <div class="event" style="left: 60%;">
+          <div class="dot"></div>
+          <div class="event-box">1912 - New Church</div>
+        </div>
+        <div class="event" style="left: 85%;">
+          <div class="dot"></div>
+          <div class="event-box">2014 - Centennial Award</div>
+        </div>
+        <div class="event" style="left: 95%;">
+          <div class="dot"></div>
+          <div class="event-box">Present - Farm Active</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Kinder Family Farm Timeline -->
+    <h2>L. and M. Kinder Family Farm Timeline</h2>
+    <div class="timeline-container">
+      <div class="timeline">
+        <div class="tick" style="left: 10%;"></div>
+        <div class="tick" style="left: 30%;"></div>
+        <div class="tick" style="left: 50%;"></div>
+        <div class="tick" style="left: 70%;"></div>
+        <div class="tick" style="left: 90%;"></div>
+
+        <div class="event" style="left: 10%;">
+          <div class="dot"></div>
+          <div class="event-box">1853 - Kinder Enslaved</div>
+        </div>
+        <div class="event" style="left: 30%;">
+          <div class="dot"></div>
+          <div class="event-box">1890 - Land Purchased</div>
+        </div>
+        <div class="event" style="left: 45%;">
+          <div class="dot"></div>
+          <div class="event-box">1890 - Farm Expansion</div>
+        </div>
+        <div class="event" style="left: 70%;">
+          <div class="dot"></div>
+          <div class="event-box">1952 - Fire Destroys Farm</div>
+        </div>
+        <div class="event" style="left: 90%;">
+          <div class="dot"></div>
+          <div class="event-box">2005 - Centennial Award</div>
+        </div>
+        <div class="event" style="left: 95%;">
+          <div class="dot"></div>
+          <div class="event-box">Present - Farm Active</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <p>&copy; 2025 Black Farmers' Network | Preserving History, Empowering Farmers</p>
+  </div>
+
+</body>
+</html>
